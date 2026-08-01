@@ -145,3 +145,19 @@ setInterval(() => {
     }, 10000);
 
 }, 1200);
+
+// Shooting Stars
+
+setInterval(() => {
+    const star = document.createElement("div");
+    star.className = "shooting-star";
+
+    star.style.left = Math.random() * 100 + "%";
+
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+        star.remove();
+    }, 1600);
+
+}, 7000);
