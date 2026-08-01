@@ -98,3 +98,33 @@ if (heart && heartParticles) {
     });
 
 }
+
+// Gift Confetti
+
+if (gift && giftMsg) {
+
+    gift.addEventListener("click", () => {
+
+        const emojis=["🎉","✨","💖","🎊","❤️"];
+
+        for(let i=0;i<30;i++){
+
+            const c=document.createElement("div");
+
+            c.className="confetti";
+
+            c.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+            c.style.left=(Math.random()*120-60)+"px";
+
+            c.style.top="20px";
+
+            gift.appendChild(c);
+
+            setTimeout(()=>c.remove(),1500);
+
+        }
+
+    });
+
+}
