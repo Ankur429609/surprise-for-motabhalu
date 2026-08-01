@@ -556,3 +556,28 @@ opacity:0;
 transform:translate(var(--x),-120px) scale(0.5);
 }
 }
+
+/* Gift Confetti */
+
+.confetti{
+position:absolute;
+font-size:18px;
+pointer-events:none;
+animation:confettiFall 1.5s ease-out forwards;
+}
+
+@keyframes confettiFall{
+0%{
+opacity:1;
+transform:translateY(0) rotate(0deg);
+}
+100%{
+opacity:0;
+transform:translateY(-180px) rotate(720deg);
+}
+}
+
+#gift-box{
+position:relative;
+display:inline-block;
+}
