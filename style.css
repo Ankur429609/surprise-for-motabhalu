@@ -606,3 +606,33 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+/* ===========================
+   FIREFLIES
+=========================== */
+
+.firefly{
+    position:fixed;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#fff7b2;
+    box-shadow:0 0 12px #fff7b2;
+    opacity:0;
+    pointer-events:none;
+    animation:fireflyMove 10s linear forwards;
+}
+
+@keyframes fireflyMove{
+    0%{
+        opacity:0;
+        transform:translateY(0) translateX(0) scale(.6);
+    }
+    15%{
+        opacity:.9;
+    }
+    100%{
+        opacity:0;
+        transform:translateY(-120vh) translateX(var(--x)) scale(1);
+    }
+}
