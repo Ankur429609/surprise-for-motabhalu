@@ -146,3 +146,21 @@ revealElements.forEach((element) => {
     element.classList.add("reveal");
     observer.observe(element);
 });
+
+// Fireflies
+
+setInterval(() => {
+    const firefly = document.createElement("div");
+    firefly.className = "firefly";
+
+    firefly.style.left = Math.random() * 100 + "%";
+    firefly.style.top = "100vh";
+    firefly.style.setProperty("--x", (Math.random() * 200 - 100) + "px");
+
+    document.body.appendChild(firefly);
+
+    setTimeout(() => {
+        firefly.remove();
+    }, 10000);
+
+}, 1200);
