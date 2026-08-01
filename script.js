@@ -11,8 +11,14 @@ window.addEventListener("load", () => {
 // Interactive Heart
 const heartButton = document.getElementById("heart-button");
 
-if (heart) {
-    heart.addEventListener("click", () => {
+if (heartButton) {
+    heartButton.addEventListener("click", () => {
+        heartButton.style.transform = "scale(1.5)";
+        setTimeout(() => {
+            heartButton.style.transform = "scale(1)";
+        }, 300);
+    });
+}
         heart.style.transform = "scale(1.5)";
         setTimeout(() => {
             heart.style.transform = "scale(1)";
