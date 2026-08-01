@@ -127,3 +127,22 @@ if (giftBox && giftMessage) {
     });
 
 }
+
+// Premium Scroll Reveal
+
+const revealElements = document.querySelectorAll(".glass");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
+});
