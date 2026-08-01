@@ -94,6 +94,9 @@ font-family:'Cormorant Garamond',serif;
 
 margin-bottom:20px;
 
+text-shadow:0 0 20px rgba(255,255,255,.15);
+letter-spacing:1px;
+
 }
 
 .subtitle{
