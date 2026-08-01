@@ -532,3 +532,27 @@ transform:translateY(-140vh);
 }
 
 }
+
+#heart-particles{
+position:relative;
+height:120px;
+overflow:hidden;
+}
+
+.mini-heart{
+position:absolute;
+font-size:20px;
+animation:burst 1s ease-out forwards;
+pointer-events:none;
+}
+
+@keyframes burst{
+0%{
+opacity:1;
+transform:translate(0,0) scale(1);
+}
+100%{
+opacity:0;
+transform:translate(var(--x),-120px) scale(0.5);
+}
+}
