@@ -601,10 +601,13 @@ transform .9s cubic-bezier(.22,1,.36,1);
 }
 
 .reveal{
+    opacity:0;
+    transform:translateY(60px);
+}
 
-opacity:1;
-transform:translateY(0);
-
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /* ===========================
