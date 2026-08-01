@@ -1,23 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surprise for Motabhalu ❤️</title>
 
-  <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Surprise for Motabhalu ❤️</title>
+
+<meta name="theme-color" content="#090b17">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-  <div class="loading-screen">
-    <h1>💖</h1>
-    <h2>A Special Surprise</h2>
-    <h3>For My Motabhalu ❤️</h3>
-    <p>Made with ❤️ by Ankur</p>
-  </div>
+<div id="stars"></div>
+<div id="shooting-stars"></div>
+<div id="floating-hearts"></div>
 
-  <script src="script.js"></script>
+<!-- LOADING SCREEN -->
+
+<section id="loading-screen">
+
+<div class="loader"></div>
+
+<h1 class="typing">
+My Dearest Motabhalu ❤️
+</h1>
+
+<p>
+A little surprise made with lots of care...
+</p>
+
+</section>
+
+<!-- MAIN WEBSITE -->
+
+<main id="main-content">
+
+<!-- HERO -->
+
+<section class="hero glass">
+
+<h1>
+For My Motabhalu ❤️
+</h1>
+
+<p class="subtitle">
+Some people become unforgettable without even trying.
+</p>
+
+<a class="music-button"
+href="https://open.spotify.com/track/1jvAeM983I2ois4F8mR456"
+target="_blank">
+🎵 Play Music
+</a>
+
+</section>
+
+<!-- LOVE LETTER -->
+
+<section class="glass">
+
+<h2>Letter For You 💌</h2>
+
+<div class="letter">
+
+<p>
+
+Dear Motabhalu,
+
+This page is just the beginning.
+
+One day it will be filled with memories,
+photos,
+videos,
+voice notes,
+and countless little moments that deserve to stay forever.
+
+Thank you for being someone who makes life brighter.
+
+❤️
+
+— Ankur
+
+</p>
+
+</div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="glass">
+
+<h2>Our Timeline ✨</h2>
+
+<div class="timeline">
+
+<div class="timeline-card">
+
+<h3>Beginning</h3>
+
+<p>
+Placeholder for our first memory.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>Another Beautiful Day</h3>
+
+<p>
+Placeholder...
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>Future Memory</h3>
+
+<p>
+More moments coming soon...
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PHOTO GALLERY -->
+
+<section class="glass">
+
+<h2>Photo Gallery 📸</h2>
+
+<div class="gallery">
+
+<div class="photo-placeholder">
+Add Photo 1
+</div>
+
+<div class="photo-placeholder">
+Add Photo 2
+</div>
+
+<div class="photo-placeholder">
+Add Photo 3
+</div>
+
+<div class="photo-placeholder">
+Add Photo 4
+</div>
+
+</div>
+
+</section>
+<!-- BEST FRIEND SECTION -->
+
+<section class="glass">
+
+<h2>Why You're Special 🌸</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Your Kind Heart</h3>
+<p>
+You have a beautiful way of making people feel comfortable.
+</p>
+</div>
+
+<div class="card">
+<h3>Your Smile</h3>
+<p>
+It brings warmth to even ordinary moments.
+</p>
+</div>
+
+<div class="card">
+<h3>Your Presence</h3>
+<p>
+Some people simply make life feel lighter by being themselves.
+</p>
+</div>
+
+<div class="card">
+<h3>Your Support</h3>
+<p>
+Thank you for every conversation and every memory.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- COMPLIMENTS -->
+
+<section class="glass">
+
+<h2>Little Things I Appreciate ❤️</h2>
+
+<div class="compliments">
+
+<div class="compliment-card">✨ You are unforgettable.</div>
+
+<div class="compliment-card">🌙 Your kindness shines quietly.</div>
+
+<div class="compliment-card">🌸 You make ordinary moments feel special.</div>
+
+<div class="compliment-card">💖 Your friendship means a lot.</div>
+
+<div class="compliment-card">⭐ You deserve happiness every day.</div>
+
+<div class="compliment-card">🦋 Stay exactly the wonderful person you are.</div>
+
+</div>
+
+</section>
+
+<!-- INTERACTIVE HEART -->
+
+<section class="glass center">
+
+<h2>One Little Heart</h2>
+
+<div id="heart-button">
+❤️
+</div>
+
+<p>
+Tap the heart.
+</p>
+
+</section>
+
+<!-- SECRET MESSAGE -->
+
+<section class="glass">
+
+<h2>Secret Message 🔒</h2>
+
+<button id="unlockBtn">
+
+Unlock Message
+
+</button>
+
+<div id="secretMessage" class="hidden">
+
+<p>
+
+No matter where life takes us,
+
+I hope your smile never fades.
+
+Thank you for being such an important part of my memories.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SURPRISE BOX -->
+
+<section class="glass">
+
+<h2>A Tiny Surprise 🎁</h2>
+
+<div id="gift-box">
+
+🎁
+
+</div>
+
+<p id="gift-message" class="hidden">
+
+Surprise! More memories, photos, voice notes and magical moments will be added here soon.
+
+</p>
+
+</section>
+<!-- More sections continue below --><!-- FINAL HEART -->
+
+<section class="glass final-section">
+
+<div class="big-heart">
+
+❤️
+
+</div>
+
+<h2>
+
+Thank You, Motabhalu ❤️
+
+</h2>
+
+<p>
+
+This website is not finished.
+
+It will continue growing with every memory we create.
+
+One day this page will contain:
+
+</p>
+
+<ul class="future-list">
+
+<li>📷 Beautiful Photos</li>
+
+<li>🎥 Videos</li>
+
+<li>🎤 Voice Notes</li>
+
+<li>💌 More Letters</li>
+
+<li>⏳ Countdown Timer</li>
+
+<li>🔐 Password Protected Memories</li>
+
+<li>🌍 More Surprise Pages</li>
+
+</ul>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+Made with ❤️ by <strong>Ankur</strong>
+
+</p>
+
+<p>
+
+Forever improving this little surprise.
+
+</p>
+
+</footer>
+
+</main>
+
+<!-- AUDIO (Future Ready) -->
+
+<audio id="bgMusic" loop>
+
+<!--
+Future:
+Replace with your own MP3 file.
+
+Example:
+
+<source src="music/song.mp3" type="audio/mpeg">
+
+-->
+
+</audio>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
