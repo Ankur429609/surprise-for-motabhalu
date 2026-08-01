@@ -19,12 +19,6 @@ if (heartButton) {
         }, 300);
     });
 }
-        heart.style.transform = "scale(1.5)";
-        setTimeout(() => {
-            heart.style.transform = "scale(1)";
-        }, 300);
-    });
-}
 
 // Secret Message
 const unlockBtn = document.getElementById("unlockBtn");
