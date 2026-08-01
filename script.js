@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 // Interactive Heart
-const heart = document.getElementById("heart-button");
+const heartButton = document.getElementById("heart-button");
 
 if (heart) {
     heart.addEventListener("click", () => {
@@ -73,9 +73,9 @@ if (hearts) {
 
 const heartParticles = document.getElementById("heart-particles");
 
-if (heart && heartParticles) {
+if (heartButton && heartParticles) {
 
-    heart.addEventListener("click", () => {
+  heartButton.addEventListener("click", () => {
 
         for(let i=0;i<18;i++){
 
@@ -101,9 +101,8 @@ if (heart && heartParticles) {
 
 // Gift Confetti
 
-if (gift && giftMsg) {
-
-    gift.addEventListener("click", () => {
+if (giftBox && giftMessage) {
+    giftBox.addEventListener("click", () => {
 
         const emojis=["🎉","✨","💖","🎊","❤️"];
 
@@ -119,7 +118,7 @@ if (gift && giftMsg) {
 
             c.style.top="20px";
 
-            gift.appendChild(c);
+            giftBox.appendChild(c);
 
             setTimeout(()=>c.remove(),1500);
 
