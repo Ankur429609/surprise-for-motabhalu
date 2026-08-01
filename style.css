@@ -581,3 +581,28 @@ transform:translateY(-180px) rotate(720deg);
 position:relative;
 display:inline-block;
 }
+
+/* Premium Scroll Reveal */
+
+.glass,
+.hero,
+.timeline-card,
+.card,
+.compliment-card,
+.photo-placeholder,
+.final-section{
+
+opacity:0;
+transform:translateY(60px);
+transition:
+opacity .9s ease,
+transform .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+.reveal{
+
+opacity:1;
+transform:translateY(0);
+
+}
