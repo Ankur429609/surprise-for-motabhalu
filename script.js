@@ -70,3 +70,31 @@ if (hearts) {
 
     }, 700);
 }
+
+const heartParticles = document.getElementById("heart-particles");
+
+if (heart && heartParticles) {
+
+    heart.addEventListener("click", () => {
+
+        for(let i=0;i<18;i++){
+
+            const h=document.createElement("div");
+
+            h.className="mini-heart";
+
+            h.innerHTML="❤️";
+
+            h.style.left="50%";
+
+            h.style.setProperty("--x",(Math.random()*240-120)+"px");
+
+            heartParticles.appendChild(h);
+
+            setTimeout(()=>h.remove(),1000);
+
+        }
+
+    });
+
+}
