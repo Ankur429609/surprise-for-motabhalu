@@ -650,3 +650,35 @@ display:inline-block;
         opacity:0;
     }
 }
+
+.music-controller{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.music-button{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    background:linear-gradient(135deg,#ff4d88,#ff7eb3);
+    box-shadow:0 10px 30px rgba(255,77,136,.35);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.music-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(255,77,136,.45);
+}
+
+.music-note{
+    font-size:.9rem;
+    opacity:.75;
+    text-align:center;
+    max-width:320px;
+}
